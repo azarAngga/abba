@@ -1,0 +1,32 @@
+page-kontak {
+	.background{
+		background-color: #fff;
+	}
+	ion-card.card{
+		background-color: #CCCCCC;
+		border-radius: 5px;
+	}
+	.toolbar-background{
+		background-color: #ff6600;
+	}
+	.toolbar-title{
+		color: #fff;
+	}
+	.item{
+		margin-bottom: 10px;
+		background: rgba(255,255,255,0.5);
+		border: medium none;
+	}
+	.text-input::-moz-placeholder {
+  		color: #ff6600;
+	}
+
+	.text-input:-ms-input-placeholder {
+ 		color:  #ff6600;
+	}
+
+	.text-input::-webkit-input-placeholder {
+		text-indent: 0;
+		color:  #ff6600;
+	}
+}

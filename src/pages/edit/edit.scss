@@ -1,0 +1,21 @@
+page-edit {
+	.background{
+		background-color: #333;
+	}
+  .toolbar-background{
+  	background-color: #333;
+  }
+  .toolbar-title{
+  	color: #fff;
+	text-align: left;
+  }
+  ion-card.card{
+		background-color: #ff6600;
+		border-radius: 5px;
+	}
+	.item{
+		margin-bottom: 10px;
+		background: rgba(255,255,255,0.5);
+		border: medium none;
+	}
+}

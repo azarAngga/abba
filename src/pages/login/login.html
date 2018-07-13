@@ -1,0 +1,38 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+</ion-header>
+
+
+<ion-content  class="background">
+	<br/>	
+	<br/>
+	<br/>
+	<br/>
+    <div text-center>
+      <ion-img width="100" height="100" src="a.jpg"></ion-img>
+    </div>
+      Login
+	  <br/>
+	<ion-list>
+ 		 <ion-item>
+    		<ion-label color="white" fixed>Username</ion-label>
+    		<ion-input type="text" value="" [(ngModel)]="username"></ion-input>
+ 		 </ion-item>
+
+ 	 <ion-item>
+    		<ion-label color="white" fixed>Password</ion-label>
+    		<ion-input type="password" value="" [(ngModel)]="password"></ion-input>
+ 	 </ion-item>
+ 	 <div padding>
+  			<button ion-button color="dark" (click)="actionLogin()" block>Login</button>
+  			<p>Belum Punya akun? <a href="#" (click)="actionRegister()">Klik Di sini...</a></p>
+	 </div>
+</ion-list>
+
+</ion-content>

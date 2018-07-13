@@ -1,0 +1,147 @@
+<!--
+  Generated template for the PerkembanganBencanaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Laporan Perkembangan</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="background">
+
+<ion-card>
+  
+  <ion-card-content>
+  
+	<h2>Korban</h2>
+    <ion-item>
+    	<ion-label color="white" stacked>ID Bencana</ion-label>
+    	<ion-select [(ngModel)]="id_bencana">
+    	<ion-option *ngFor="let x of json_data" value="{{x.id_bencana}}">{{x.nama_bencana}}</ion-option>
+    	</ion-select>
+    </ion-item>
+    <ion-item *ngIf="id_bencana != undefined">
+		<ion-label color="white" stacked>Masukan ID Bencana Yang Diterima</ion-label>
+		<ion-input placeholder="ID Bencana" [(ngModel)]="id_bencana"></ion-input>
+	 </ion-item>
+
+	 <ion-item *ngIf="id_bencana == undefined">
+		<ion-label color="white" stacked>Masukan ID Bencana Yang Diterima</ion-label>
+		<ion-input  placeholder="ID Bencana" [(ngModel)]="id_bencana"></ion-input>
+	 </ion-item>
+	
+	<h2>Jumlah Korban</h2>
+	<ion-item>
+		<ion-label color="white" stacked>Jumlah Meninggal</ion-label>
+		<ion-input placeholder="Jumlah Meninggal" [(ngModel)]="jml_meninggal"></ion-input>
+	 </ion-item>
+	
+	<ion-item>
+		<ion-label color="white" stacked>Jumlah Luka</ion-label>
+		<ion-input placeholder="Ringan" [(ngModel)]="jml_luka_ringan"></ion-input>
+		<ion-input placeholder="Sedang" [(ngModel)]="jml_luka_sedang"></ion-input>
+		<ion-input placeholder="Berat" [(ngModel)]="jml_luka_berat"></ion-input>
+	 </ion-item>
+	 <ion-item>
+		<ion-label color="white" stacked>Jumlah Korban Hilang</ion-label>
+		<ion-input placeholder="Jumlah Korban Hilang" [(ngModel)]="jml_hilang"></ion-input>
+	 </ion-item>
+	   
+	<h2>Pengungsi</h2>
+	
+	<ion-item>
+		<ion-label color="white" stacked>Laki-Laki</ion-label>
+		<ion-input placeholder="Balita" [(ngModel)]="balita_l"></ion-input>
+		<ion-input placeholder="Anak-anak" [(ngModel)]="anak_l"></ion-input>
+		<ion-input placeholder="Dewasa" [(ngModel)]="dewasa_l"></ion-input>
+		<ion-input placeholder="Lansia" [(ngModel)]="lansia_l"></ion-input>
+	 </ion-item>
+	 <ion-item>
+	 	<ion-label color="white" stacked>Perempuan</ion-label>
+		<ion-input placeholder="Balita" [(ngModel)]="balita_p"></ion-input>
+		<ion-input placeholder="Anak-anak" [(ngModel)]="anak_p"></ion-input>
+		<ion-input placeholder="Dewasa" [(ngModel)]="dewasa_p"></ion-input>
+		<ion-input placeholder="Lansia" [(ngModel)]="lansia_p"></ion-input>
+	 </ion-item>
+	 
+	 <ion-item>
+		<ion-label color="white" stacked>pengungsi KK</ion-label>
+		<ion-input placeholder="Pengungsi KK" [(ngModel)]="pengungsi_kk"></ion-input>
+	 </ion-item>
+	 
+	 <h2>Infrastruktur Rusak</h2>
+	 
+	  <ion-item>
+		<ion-label color="white" stacked>Rumah</ion-label>
+		<ion-input placeholder="Rumah" [(ngModel)]="rumah"></ion-input>
+	 </ion-item>
+	 
+	 <ion-item>
+		<ion-label color="white" stacked>Kantor</ion-label>
+		<ion-input placeholder="Kantor" [(ngModel)]="kantor"></ion-input>
+	 </ion-item>
+	 
+	 <h2>Fasilitas Rusak</h2>
+	 
+	 <ion-item>
+		<ion-label color="white" stacked>Kesehatan</ion-label>
+		<ion-input placeholder="Kesehatan" [(ngModel)]="kesehatan"></ion-input>
+	 </ion-item>
+	 
+	 <ion-item>
+		<ion-label color="white" stacked>pendidikan</ion-label>
+		<ion-input placeholder="pendidikan" [(ngModel)]="pendidikan"></ion-input>
+	 </ion-item>
+	 
+	 <ion-item>
+		<ion-label color="white" stacked>Umum</ion-label>
+		<ion-input placeholder="Umum" [(ngModel)]="umum"></ion-input>
+	 </ion-item>
+	 
+	 <h2>Sarana Rusak</h2>
+	 
+	 <ion-item>
+		<ion-label color="white" stacked>Ibadah</ion-label>
+		<ion-input placeholder="Ibadah" [(ngModel)]="ibadah"></ion-input>
+	 </ion-item>
+	 
+	 <ion-item>
+		<ion-label color="white" stacked>jembatan</ion-label>
+		<ion-input placeholder="Jembatan" [(ngModel)]="jembatan"></ion-input>
+	 </ion-item>
+	 
+	 <ion-item>
+		<ion-label color="white" stacked>Jalan</ion-label>
+		<ion-input placeholder="Jalan" [(ngModel)]="jalan"></ion-input>
+	 </ion-item>
+	 <ion-item>
+			<ion-label color="white" stacked>Kerusakan</ion-label>
+			<ion-input placeholder="Rp." [(ngModel)]="kerusakan"></ion-input>
+	</ion-item>
+	<ion-item>
+			<ion-label color="white" stacked>Kerugian</ion-label>
+			<ion-input placeholder="Rp." [(ngModel)]="kerugian"></ion-input>
+	</ion-item>
+
+	<ion-item>
+		<ion-label color="white" stacked>Upaya yang di Lakukan</ion-label>
+		<ion-input placeholder="Upaya yang di Lakukan" [(ngModel)]="upaya"></ion-input>
+		
+	 </ion-item>
+		<button ion-button block color="dark" (click)="putData()">Submit</button>
+
+	
+	
+  </ion-card-content>
+</ion-card>
+
+
+
+
+</ion-content>

@@ -1,0 +1,119 @@
+{
+  "name": "material",
+  "version": "0.0.1",
+  "author": "Ionic Framework",
+  "homepage": "http://ionicframework.com/",
+  "private": true,
+  "scripts": {
+    "clean": "ionic-app-scripts clean",
+    "build": "ionic-app-scripts build",
+    "lint": "ionic-app-scripts lint",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve"
+  },
+  "dependencies": {
+    "@angular/common": "4.1.3",
+    "@angular/compiler": "4.1.3",
+    "@angular/compiler-cli": "4.1.3",
+    "@angular/core": "4.1.3",
+    "@angular/forms": "4.1.3",
+    "@angular/http": "4.1.3",
+    "@angular/platform-browser": "4.1.3",
+    "@angular/platform-browser-dynamic": "4.1.3",
+    "@ionic-native/android-permissions": "^4.7.0",
+    "@ionic-native/barcode-scanner": "^4.5.3",
+    "@ionic-native/camera": "^4.1.0",
+    "@ionic-native/core": "3.12.1",
+    "@ionic-native/device": "^4.7.0",
+    "@ionic-native/document-viewer": "^4.7.0",
+    "@ionic-native/file": "^4.1.0",
+    "@ionic-native/file-chooser": "^4.1.0",
+    "@ionic-native/file-opener": "^4.7.0",
+    "@ionic-native/file-path": "^4.1.0",
+    "@ionic-native/file-transfer": "^4.7.0",
+    "@ionic-native/geolocation": "^4.7.0",
+    "@ionic-native/screen-orientation": "^4.7.0",
+    "@ionic-native/splash-screen": "3.12.1",
+    "@ionic-native/status-bar": "3.12.1",
+    "@ionic/storage": "^2.1.3",
+    "android-versions": "^1.3.0",
+    "angular2-signaturepad": "^2.7.0",
+    "cordova-android": "~6.3.0",
+    "cordova-android-support-gradle-release": "^1.3.0",
+    "cordova-ios": "^4.4.0",
+    "cordova-plugin-android-permissions": "^1.0.0",
+    "cordova-plugin-camera": "^2.4.1",
+    "cordova-plugin-compat": "^1.2.0",
+    "cordova-plugin-console": "^1.1.0",
+    "cordova-plugin-device": "^1.1.7",
+    "cordova-plugin-document-viewer": "^0.9.9",
+    "cordova-plugin-file": "^4.3.3",
+    "cordova-plugin-file-opener2": "^2.0.19",
+    "cordova-plugin-file-transfer": "^1.7.1",
+    "cordova-plugin-filechooser": "^1.0.1",
+    "cordova-plugin-filepath": "^1.3.0",
+    "cordova-plugin-geolocation": "^4.0.1",
+    "cordova-plugin-googlemaps": "^2.3.6",
+    "cordova-plugin-screen-orientation": "^3.0.1",
+    "cordova-plugin-splashscreen": "^4.1.0",
+    "cordova-plugin-statusbar": "^2.4.1",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "cordova-sqlite-storage": "^2.3.0",
+    "es6-promise-plugin": "^4.2.2",
+    "ionic-angular": "3.6.0",
+    "ionic-plugin-keyboard": "^2.2.1",
+    "ionicons": "3.0.0",
+    "jquery": "^3.3.1",
+    "minimist": "^1.2.0",
+    "phonegap-plugin-barcodescanner": "^6.0.8",
+    "rxjs": "5.4.0",
+    "sw-toolbox": "3.6.0",
+    "xml2js": "^0.4.19",
+    "zone.js": "0.8.12"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "2.1.3",
+    "@ionic/cli-plugin-cordova": "1.6.2",
+    "@ionic/cli-plugin-ionic-angular": "1.4.1",
+    "ionic": "3.20.0",
+    "typescript": "2.3.4"
+  },
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-sqlite-storage": {},
+      "cordova-plugin-console": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-whitelist": {},
+      "ionic-plugin-keyboard": {},
+      "cordova-plugin-filechooser": {},
+      "cordova-plugin-file-transfer": {},
+      "cordova-plugin-camera": {
+        "CAMERA_USAGE_DESCRIPTION": " ",
+        "PHOTOLIBRARY_USAGE_DESCRIPTION": " "
+      },
+      "cordova-plugin-file": {},
+      "cordova-plugin-filepath": {},
+      "phonegap-plugin-barcodescanner": {
+        "CAMERA_USAGE_DESCRIPTION": " "
+      },
+      "cordova-plugin-screen-orientation": {},
+      "cordova-plugin-document-viewer": {},
+      "cordova-android-support-gradle-release": {
+        "ANDROID_SUPPORT_VERSION": "27.0.0"
+      },
+      "cordova-plugin-file-opener2": {},
+      "cordova-plugin-compat": {},
+      "cordova-plugin-geolocation": {
+        "GEOLOCATION_USAGE_DESCRIPTION": "To locate you"
+      },
+      "cordova-plugin-android-permissions": {}
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+<!--
+  Generated template for the EditPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Edit Laporan</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="background">
+	<ion-card>
+		<ion-card-content>
+			<h2>Rincian</h2>
+			<ion-list>
+		 		<ion-item>
+					<ion-label>Jenis Bencana</ion-label>
+					<ion-select [(ngModel)]="jenis_bencana">
+		  				<ion-option value="gunung meletus">Gunung Meletus</ion-option>
+		  				<ion-option value="tsunami">Tsunami</ion-option>
+		  				<ion-option value="kebakaran hutan">Kebakaran Hutan</ion-option>
+		  				<ion-option value="banjir">Banjir</ion-option>
+		  				<ion-option value="tanah longsor">Tanah Longsor</ion-option>
+		  				<ion-option value="badai">Badai</ion-option>
+		  				<ion-option value="kekeringan">Kekeringan</ion-option>
+		  				<ion-option value="wabah penyakit">Wabah Penyakit</ion-option>
+		  				<ion-option value="kerusakan infrastruktur">Kerusakan Infrastruktur</ion-option>
+					</ion-select>
+	  			</ion-item>
+			</ion-list>
+	
+			<ion-item>
+	  			<ion-label>Set Waktu Bencana</ion-label>
+	  			<ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="waktu_bencana" ></ion-datetime>
+			</ion-item>
+	
+			<ion-item>
+			  <ion-label>Set Tanggal Bencana</ion-label>
+			  <ion-datetime displayFormat="DD MMMM YYYY" pickerFormat="DD/MMMM/YYYY"  [(ngModel)]="tanggal_bencana"></ion-datetime>
+			</ion-item>
+			
+			 <ion-item>
+				<ion-label color="primary" stacked>Lokasi Bencana</ion-label>
+				<ion-input placeholder="Dusun" [(ngModel)]="dusun"></ion-input>
+				<ion-input placeholder="RT" [(ngModel)]="rt"></ion-input>
+				<ion-input placeholder="RW" [(ngModel)]="rw"></ion-input>
+				<ion-input placeholder="Desa" [(ngModel)]="desa"></ion-input>
+				<ion-input placeholder="Kecamatan" [(ngModel)]="kecamatan"></ion-input>
+
+			  </ion-item>
+			   
+			  <ion-item>
+				<ion-label color="primary" stacked>Penyebab</ion-label>
+				<ion-input placeholder="penyebab" [(ngModel)]="penyebab"></ion-input>
+				
+			  </ion-item>
+			  
+			   <ion-item>
+				<ion-label color="primary" stacked>Nama Bencana</ion-label>
+				<ion-input placeholder="Nama bencana" [(ngModel)]="nama_bencana"></ion-input>
+				
+			  </ion-item>
+
+			 <ion-item>
+				<ion-label color="primary" stacked>Kronologi Kejadian</ion-label>
+				<ion-input placeholder="Kronologi Kejadian" [(ngModel)]="kronologi_kejadian"></ion-input>
+				
+			 </ion-item>
+
+			 <h2>Korban</h2>
+		    <ion-item>
+				<ion-label color="primary" stacked>Masukan ID Bencana Yang Diterima</ion-label>
+				<ion-input disabled placeholder="ID Bencana" [(ngModel)]="v_id_bencana"></ion-input>
+			 </ion-item>
+			
+			<h2>Jumlah Korban</h2>
+			<ion-item>
+				<ion-label color="primary" stacked>Jumlah Meninggal</ion-label>
+				<ion-input placeholder="Jumlah Meninggal" [(ngModel)]="jml_meninggal"></ion-input>
+			 </ion-item>
+			
+			<ion-item>
+				<ion-label color="primary" stacked>Jumlah Luka Berat</ion-label>
+				<ion-input placeholder="Jumlah Luka Berat" [(ngModel)]="jml_luka_berat"></ion-input>
+			 </ion-item>
+			
+			 <ion-item>
+				<ion-label color="primary" stacked>Jumlah Korban Hilang</ion-label>
+				<ion-input placeholder="Jumlah Korban Hilang" [(ngModel)]="jml_hilang"></ion-input>
+			 </ion-item>
+			   
+			<h2>Pengungsi</h2>
+			
+			<ion-item>
+				<ion-label color="primary" stacked>pengungsi Jiwa</ion-label>
+				<ion-input placeholder="Pengungsi Jiwa" [(ngModel)]="pengungsi_jiwa"></ion-input>
+			 </ion-item>
+			 
+			 <ion-item>
+				<ion-label color="primary" stacked>pengungsi KK</ion-label>
+				<ion-input placeholder="KK" [(ngModel)]="pengungsi_kk"></ion-input>
+			 </ion-item>
+			 
+			 <h2>Infrastruktur Rusak</h2>
+			 
+			  <ion-item>
+				<ion-label color="primary" stacked>Rumah</ion-label>
+				<ion-input placeholder="Rumah" [(ngModel)]="rumah"></ion-input>
+			 </ion-item>
+			 
+			 <ion-item>
+				<ion-label color="primary" stacked>Kantor</ion-label>
+				<ion-input placeholder="Kantor" [(ngModel)]="kantor"></ion-input>
+			 </ion-item>
+			 
+			 <h2>Fasilitas Rusak</h2>
+			 
+			 <ion-item>
+				<ion-label color="primary" stacked>Kesehatan</ion-label>
+				<ion-input placeholder="kesehatan" [(ngModel)]="kesehatan"></ion-input>
+			 </ion-item>
+			 
+			 <ion-item>
+				<ion-label color="primary" stacked>pendidikan</ion-label>
+				<ion-input placeholder="Pendidikan" [(ngModel)]="pendidikan"></ion-input>
+			 </ion-item>
+			 
+			 <ion-item>
+				<ion-label color="primary" stacked>Umum</ion-label>
+				<ion-input placeholder="Umum" [(ngModel)]="umum"></ion-input>
+			 </ion-item>
+			 
+			 <h2>Sarana Rusak</h2>
+			 
+			 <ion-item>
+				<ion-label color="primary" stacked>Ibadah</ion-label>
+				<ion-input placeholder="Ibadah" [(ngModel)]="ibadah"></ion-input>
+			 </ion-item>
+			 
+			 <ion-item>
+				<ion-label color="primary" stacked>jembatan</ion-label>
+				<ion-input placeholder="Jembata" [(ngModel)]="jembatan"></ion-input>
+			 </ion-item>
+			 
+			 <ion-item>
+				<ion-label color="primary" stacked>Jalan</ion-label>
+				<ion-input placeholder="Jalan" [(ngModel)]="jalan"></ion-input>
+			 </ion-item>
+			 <ion-item>
+					<ion-label color="primary" stacked>Kerusakan</ion-label>
+					<ion-input placeholder="Rp." [(ngModel)]="kerusakan"></ion-input>
+			</ion-item>
+			<ion-item>
+					<ion-label color="primary" stacked>Kerugian</ion-label>
+					<ion-input placeholder="Rp." [(ngModel)]="kerugian"></ion-input>
+			</ion-item>
+			<button color="dark" ion-button (click)="PutData()">Save</button>
+		</ion-card-content>
+	</ion-card>
+</ion-content>

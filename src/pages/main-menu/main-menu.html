@@ -1,0 +1,56 @@
+<!--
+  Generated template for the MainMenuPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar>
+    <button ion-button menuToggle >
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Menu</ion-title>
+    <ion-buttons end>
+      <button (click)="actionLogout()" ion-button icon-only >
+        <ion-icon name="md-exit"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-card>
+    <ion-card-content>
+    <div class="row">
+      <div class="col-3">
+        <button (click)="actionLaporan()" ion-button class="button" >LAPORAN AWAL</button>
+      </div>
+      <div class="col-3">
+        <button (click)="actionlaporanPerkembangan()" ion-button class="button">LAPORAN <br/>PERKEMBANGAN</button>
+      </div>
+      <div class="col-3">
+        <button (click)="actionListOwner()" ion-button class="button">INFO TERKINI</button>
+      </div>
+      <div class="col-3">
+        <button (click)="actionKontak()" ion-button class="button">KONTAK</button>
+      </div>
+      <div class="col-3">
+        <button (click)="actionTentang()" ion-button class="button">TENTANG</button>
+      </div>
+      <!--<div class="col-3">
+        <button (click)="actionPanduan()" ion-button class="button">PANDUAN</button>
+      </div>-->
+  </div>
+</ion-card-content>
+</ion-card>
+<div text-center class="info">BERITA TERKINI</div>
+   <!-- <button (click)="actionLaporan()" ion-button class="button">Laporan Awal</button>
+	<button hidden (click)="actionlaporanPerkembangan()" ion-button block>Laporan Perkembangan</button>
+  <button hidden (click)="actionlaporanPerkembanganPosko()" ion-button block>Laporan Perkembangan Posko</button>
+   <button (click)="actionList()" ion-button block>Daftar Laporan</button>
+   <button (click)="actionListOwner()" ion-button block>Edit Laporan</button>
+   <button (click)="actionKontak()" ion-button block>Kontak</button>
+	
+-->
+
+</ion-content>
